@@ -141,17 +141,10 @@ img {margin-bottom: 20px;}
 	      document.getElementById('signupmodal-overlay').style.display='block';
 	      document.getElementById('signupmodal-lightbox').style.display='block';
 	  }
-	}
-
-	if (getCookie('getyourcensoron')) {
-	} else {
-
-	    setTimeout( "displayAmericanCensorshipModal()",30000 );	
-	    setCookie('getyourcensoron', 'beenthere', 1);
-	}
-
-
-
+	};
+	
+	var timeToTimeout = 30000;
+    setTimeout( "displayAmericanCensorshipModal()", timeToTimeout);	
 
     </script>
 
