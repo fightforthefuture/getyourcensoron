@@ -192,10 +192,8 @@ hr {
 	
 	var timeToTimeout = 30000;
 	if (getCookie('getyourcensoron')) {
-<<<<<<< HEAD
-=======
 	    //Dont' show it
->>>>>>> dd66168e2c421b4f8e7e8f8fca8b88604a7a956f
+        console.log("You've already seen the modal dialog! How wonderful!");
 	} else {
 	    setTimeout('displayAmericanCensorshipModal()', timeToTimeout);	
 	    setCookie('getyourcensoron', 'beenthere', 1);
