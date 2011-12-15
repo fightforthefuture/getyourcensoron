@@ -49,7 +49,7 @@ img {margin-bottom: 20px;}
 
 </head>
 <body>
-	<script src="http://americancensorship.org/modal/call-client.js"></script>
+
 	<div id="fb-root"></div>
 			<script>(function(d, s, id) {
 			  var js, fjs = d.getElementsByTagName(s)[0];
@@ -155,7 +155,12 @@ img {margin-bottom: 20px;}
 	};
 	
 	var timeToTimeout = 30000;
-    setTimeout( "displayAmericanCensorshipModal()", timeToTimeout);	
+	if (getCookie('getyourcensoron')) {
+	    alert("got a cookie, shut the fuck up");
+	} else {
+	    setTimeout('displayAmericanCensorshipModal()', timeToTimeout);	
+	    setCookie('getyourcensoron', 'beenthere', 1);
+	}
 
     </script>
 
